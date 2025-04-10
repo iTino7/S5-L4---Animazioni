@@ -1,0 +1,45 @@
+body {
+    background-color: #1f1934;
+    margin-inline: 500px;
+    margin-top: 20px;
+}
+
+.containerPostIt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.postIt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    background-color: #fff740;
+    margin: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    transform: rotate(15deg);
+    transition: transform .7s ease-in-out;
+}
+
+
+.postIt:nth-child(odd) {
+    background-color: #ff65a3;
+    transform: rotate(-15deg);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform .7s ease-in-out;
+}
+
+.postIt h3 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.postIt:hover {
+    transform: rotate(0deg);
+}
